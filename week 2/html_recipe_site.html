@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chicken Carbonara Recipe</title>
+    <!-- Based on the classes we have applied to our container and thumbnail divs, today we will explore how margins, padding, and borders effect the dimensions of our block level elements in both pixel and percentage based grid systems. -->
+    <style type="text/css">
+    body {
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        color: #777;
+        font-style: italic;
+    }
+    
+    h2 {
+        text-transform: uppercase;
+    }
+    
+    div {
+        background-color: rgba(0, 0, 200, 0.2);
+    }
+    
+    .container {
+        width: 900px;
+        margin: 0px auto;
+        padding: 20px;
+    }
+    
+    .thumbnail {
+        width: 300px;
+        height: 300px;
+        float: left;
+    }
+    /* how tpo clear-fix aka avoid collapsed parent element when floating child elements */
+    /* solution 1 adding an element after our last floated element with clear both and no height*/
+    
+    .clear {
+        clear: both;
+    }
+    /*solution 2 using CSS alone and a clear fix  class which we apply*/
+    
+    .clear-fix::after {
+        content: "";
+        display: block;
+        clear: both;
+        /* for backwards compatibility */
+        height: 0;
+        font-size: 0;
+        /* extra back up*/
+        visibility: hidden;
+    }
+    
+    .container-fluid {
+        background-color: rgba(0, 100, 150, 0.2);
+        width: 90%;
+        padding: 2%;
+        margin: 0 auto;
+    }
+    
+    .thumbnail-fluid {
+        width: 25%;
+        margin: 0 1%;
+        /* 25% - 2*1% */
+        width: 23%;
+        height: 300px;
+        float: left;
+    }
+    
+    
+    </style>
+</head>
+
+<body>
+    <!-- Notice our heading are block elements too -->
+    <h1>Chicken Carbonra Recipe</h1>
+    <div class="container clear-fix">
+        <div class="thumbnail"></div>
+        <div class="thumbnail"></div>
+        <div class="thumbnail"></div>
+    </div>
+    <hr>
+    <h2>Ingredients</h2>
+    <div class="container-fluid clear-fix">
+        <div class="thumbnail-fluid">
+            <ul>
+                <li>1 package (7 ounces) spaghetti</li>
+                <li>8 slices bacon, cut into 1/2-inch pieces</li>
+                <li>1 medium onion, chopped (1/2 cup)</li>
+                <li>1 garlic clove, finely chopped</li>
+                <li>2 cups cut-up cooked chicken</li>
+                <li>1/2 cup grated Parmesan cheese</li>
+                <li>1/2 cup whipping (heavy) cream</li>
+            </ul>
+        </div>
+        
+    </div>
+    <h2>Cooking Directions</h2>
+    <div class="container clear-fix">
+        <div class="thumbnail-fluid">1 Cook and drain spaghetti as directed on package.</div>
+        <div class="thumbnail-fluid">2 While spaghetti is cooking, cook bacon in 3-quart saucepan over low heat 8 to 10 minutes, stirring frequently, until crisp. Remove bacon from saucepan with slotted spoon; drain. Drain fat from saucepan, reserving 1 tablespoon in saucepan.</div>
+        <div class="thumbnail-fluid">3 Cook onion and garlic in bacon fat over medium heat about 3 minutes, stirring frequently, until onion is tender. Stir in spaghetti, chicken, cheese and whipping cream. Cook, stirring occasionally, until heated through. Toss with bacon.</div>
+        <div class="thumbnail-fluid"></div>
+    </div>
+    <hr>
+    
+</body>
+
+</html>
