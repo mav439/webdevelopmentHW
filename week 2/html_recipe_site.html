@@ -64,6 +64,48 @@
         height: 300px;
         float: left;
     }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: Helvetica, Arial, sans-serif;
+    }
+    
+    ul {
+        /* remove the bullet points */
+        list-style-type: none;
+        overflow: hidden;
+        background-color: #999;
+    }
+    
+    li {
+        /* float first and thenwe will switch to inline */
+        /* float: left; */
+        /* use inline */
+        display: inline-block;
+    }
+    
+    li a {
+        /* anchor tags by default display inline, here we are telling them to behave like a block element. Making the anchor block and adding dimensions padding we get a bigger clickable area for the user to select*/
+        display: block;
+        text-align: center;
+        width: 100px;
+        padding: 10px;
+        /* remove that ugly underline and color */
+        color: #333;
+        text-decoration: none;
+    }
+    
+    li a:hover {
+        background-color: #111;
+        color: white;
+    }
+    
+    li a.active {
+        background-color: #888;
+    }
     
     
     </style>
@@ -71,6 +113,35 @@
 
 <body>
     <!-- Notice our heading are block elements too -->
+     <div class="wrapper">
+        <header>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <main>
+            <h1>Chicken Carbonara</h1>
+            <article>
+                <h2>Article with 3 sections.</h2>
+                <section>
+                    <h3>Ingredients</h3></section>
+                <section>
+                    <h3>Cooking Direction</h3></section>
+                <section>
+                    <h3>Section 3</h3></section>
+            </article>
+            <aside>
+                <h2>Other Recipes</h2></aside>
+            <!-- clear out so our wrapper div wraps around. we will discuss several clearfixes this week -->
+            <br class="clear" />
+
+        </main>
+        <footer>
+            <h3>Some footer text</h3></footer>
+    </div>
     <h1>Chicken Carbonra Recipe</h1>
     <div class="container clear-fix">
         <div class="thumbnail"></div>

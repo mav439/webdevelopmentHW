@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Recipe: Chicken Carbonara</title>
+    <!-- Enough with the style tag! Let's link to an external style sheet that we can reuse common styles across an entire site -->
+    <link rel="stylesheet" type="text/css" href="css/layout-1.css">
+    <style type="text/css">
+    /* transparent blue bg, and minimum height so we can keep track of our divs and semantic markup elements without having to add content. */
+    
+    div,
+    header,
+    footer,
+    section,
+    aside,
+    article,
+    li,
+    *,
+    li a,
+    body,
+    main {
+        min-height: 100px;
+        /* RGBA color, red, green, blue (0-255) and alpha (0-1) */
+        background-color: rgba(0, 100, 255, 0.2)
+    }
+    
+    div.wrapper {
+        width: 1000px;
+        /* use margin 0 auto to center our wrapper div within the browser window */
+        margin: 0 auto;
+        /* add a little padding so we can see how child elements stack more clearly */
+        padding: 30px;
+    }
+    
+    header,
+    footer {
+        width: 100%;
+    }
+    /* Define these after adding to html! Notice the clear issue with floating! */
+    
+    article {
+        width: 600px;
+        float: left;
+        /* option 2:  add some margins; */
+        /* 600-20-20=560px */
+        width: 540px;
+        margin: 0 auto;
+    }
+    
+    aside {
+        width: 300px;
+        /* Define a height so we can see it better */
+        min-height: 424px;
+        float: right;
+        /* option 2:  add some margins; */
+        /* 300-20-20=260px */
+        width: 260px;
+        margin: 0px 60px;
+    }
+    /* use this to fix the container/wrapping float issues */
+    
+    br.clear {
+        clear: both;
+        height: 0;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: Helvetica, Arial, sans-serif;
+    }
+    
+    ul {
+        /* remove the bullet points */
+        list-style-type: none;
+        overflow: hidden;
+        background-color: #999;
+    }
+    
+    li {
+        /* float first and thenwe will switch to inline */
+        /* float: left; */
+        /* use inline */
+        display: inline-block;
+    }
+    
+    li a {
+        /* anchor tags by default display inline, here we are telling them to behave like a block element. Making the anchor block and adding dimensions padding we get a bigger clickable area for the user to select*/
+        display: block;
+        text-align: center;
+        width: 100px;
+        padding: 10px;
+        /* remove that ugly underline and color */
+        color: #333;
+        text-decoration: none;
+    }
+    
+    li a:hover {
+        background-color: #111;
+        color: white;
+    }
+    
+    li a.active {
+        background-color: #888;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Header, Main, Sidebar, Footer with pixels  -->
+    <div class="wrapper">
+        <header>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <main>
+            <h1>Chicken Carbonara</h1>
+            <article>
+                <h2>Recipe</h2>
+                <section>
+                    <h3>Ingredients</h3>
+                    <ol>
+                        <li>1 package (7 ounces) spaghetti</li>
+                        <li>8 slices bacon, cut into 1/2-inch pieces</li>
+                        <li>1 medium onion, chopped (1/2 cup)</li>
+                        <li>1 garlic clove, finely chopped</li>
+                        <li>2 cups cut-up cooked chicken</li>
+                        <li>1/2 cup grated Parmesan cheese</li>
+                        <li>1/2 cup whipping (heavy) cream</li>
+                    </ol>
+                </section>
+                <section>
+                    <h3>Cooking Direction</h3>
+                    <ol>
+                        <li>1 Cook and drain spaghetti as directed on package.</li>
+                        <li>2 While spaghetti is cooking, cook bacon in 3-quart saucepan over low heat 8 to 10 minutes, stirring frequently, until crisp. Remove bacon from saucepan with slotted spoon; drain. Drain fat from saucepan, reserving 1 tablespoon in saucepan.</li>
+                        <li>3 Cook onion and garlic in bacon fat over medium heat about 3 minutes, stirring frequently, until onion is tender. Stir in spaghetti, chicken, cheese and whipping cream. Cook, stirring occasionally, until heated through. Toss with bacon.</li>
+                    </ol>
+                </section>
+                <section>
+                    <h3>comments</h3></section>
+            </article>
+            <aside>
+                <h2>Image</h2></aside>
+            <!-- clear out so our wrapper div wraps around. we will discuss several clearfixes this week -->
+            <br class="clear" />
+        </main>
+        <footer>
+            <h3>This is a work in progress. Be sure to visit our home page for more delicious recipies.
+            </h3></footer>
+    </div>
+</body>
+
+</html>
