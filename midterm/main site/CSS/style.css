@@ -12,6 +12,33 @@ Copyright 2013, Josh Cope
     padding: 0;
 }
 
+/* div#about div#home 100vh 100vw fixed pos z index -1000
+
+div.background-img {
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    top:0;
+    background: url(../images/bg.NY.gif) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+}
+
+div#home{
+        background: url(../images/bg.NY.gif) no-repeat center center fixed;
+}
+
+
+
+
+
+
+
+*/
 html {
     background: url(../images/bg.NY.gif) no-repeat center center fixed;
     -webkit-background-size: cover;

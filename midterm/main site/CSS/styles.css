@@ -87,7 +87,7 @@ nav a:hover {
 /*trying dropdown search*/
 
 
-/*  MAIN GALLERY*/
+/*  Main Page*/
 
 .container {
     width: 900px;
@@ -99,9 +99,10 @@ nav a:hover {
     width: 300px;
     height: 50px;
     margin: 0 auto;
-    padding-top: 15px;
+    padding: 15px;
     z-index: 11;
     position: relative;
+
 }
 
 .polaroid {
@@ -118,7 +119,7 @@ nav a:hover {
     height: 90%;
     border: 10px solid #FEF9EF;
     border-bottom: 45px solid #FEF9EF;
-    /*h-shadow v-shadow | blur spread color*/
+    
     -webkit-box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
     -moz-box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
     box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
@@ -142,7 +143,7 @@ nav a:hover {
 }
 
 
-/* initial values for our hidden items */
+
 
 
 .polaroid a {
@@ -153,7 +154,7 @@ nav a:hover {
 }
 
 
-/* scale and make opaque on hover */
+
 
 
 .polaroid:hover a {
@@ -173,7 +174,7 @@ nav a:hover {
     
 }
 
-.trees img {
+.trees img, .trees textarea {
     width: 100%;
     height: 90%;
     border: 10px solid #FEF9EF;
@@ -185,7 +186,6 @@ nav a:hover {
 }
 
 
-}
 
 
 /* Tranforms */
