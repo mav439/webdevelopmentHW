@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* NAVIGATION */
+
+
+
+
+/*  Main Page*/
+
+
+.about {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+
+    
+}
+.about img {
+    width: 100%;
+    
+}
+
+
+  
+}
+
+}
+
+.polaroid {
+    position: relative;
+    width: 240px;
+    display: inline-block;
+    margin: 20px;
+    padding-top: 18px;
+    
+}
+
+.polaroid img {
+    width: 100%;
+    height: 90%;
+    border: 10px solid #FEF9EF;
+    border-bottom: 45px solid #FEF9EF;
+    
+    -webkit-box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+    -moz-box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+    box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+}
+
+.polaroid p {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 10px;
+    font: 400 18px 'Kaushan Script', cursive;
+    color: #888;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Tranforms */
+.polaroid:hover {
+    transform: scale(1.5);
+    transition: all 1s ease-in-out;
+    z-index: 9;
+}
+
+
+
+
+
+.polaroid a {
+    width: 240px;
+    height: 150px;
+    
+    
+}
+
+
+
+
+
+.polaroid:hover a {
+    width: 360px;
+    height: 225px;
+    
+}
+
+
+/* second page*/
+.trees {
+    position: relative;
+    width: 500px;
+    display: inline-block;
+    margin: 0 px;
+    padding-top: 15px;
+    
+}
+
+.trees img, .trees textarea {
+    width: 100%;
+    height: 90%;
+    border: 10px solid #FEF9EF;
+    border-bottom: 45px solid #FEF9EF;
+    /*h-shadow v-shadow | blur spread color*/
+    -webkit-box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+    -moz-box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+    box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+}
+
+
+
+
+/* Tranforms */
+.trees:hover {
+   
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: red;
+    color: white;
+    padding: 30px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    font: 400 20px 'Kaushan Script', cursive;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+    font: 400 20px 'Kaushan Script', cursive;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font: 400 20px 'Kaushan Script', cursive;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+/* about page */
+.live {
+    position: absolute;
+    width: 800px;
+    display: inline-block;
+    margin: 100px;
+    padding-top: 18px;
+   
+}
+
+
+
+.live img {
+    width: 100%;
+    height: 90%;
+    border: 10px solid #FEF9EF;
+    border-bottom: 45px solid #FEF9EF;
+    /*h-shadow v-shadow | blur spread color*/
+    -webkit-box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+    -moz-box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+    box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+    
+}
+
+
+.live p {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 35px;
+    margin: 0px;
+    font: 400 25px 'Kaushan Script', cursive;
+    color: white;
+    
+}
+
+.live iframe {
+    position: absolute;
+    text-align: center;
+    top: 30px;
+    margin: 120px;
+    border: 10px solid #FEF9EF;
+    
+    /*h-shadow v-shadow | blur spread color*/
+    -webkit-box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+    -moz-box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+    box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+    
+    }

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NYC Find</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <style type="text/css">
+    #myCarousel {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    #myCarousel img {
+        width: 100%;
+    }
+    
+    .carousel-control {
+        color: cornflowerblue;
+    }
+    
+    .navbar-default {
+        background-color: red;
+    }
+    
+    .navbar-default .navbar-nav>li>a,
+    .navbar-default .navbar-header a,
+    .navbar-default .navbar-header p {
+        color: black;
+        font-family: Lobster;
+        font-size: 30px;
+    }
+    
+    .bg {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        position: absolute;
+    }
+    
+    .bg img {
+        width: 100%;
+    }
+    
+    .map {
+        width: 100vw;
+        height: 100vh;
+        z-index: 1000;
+        padding-top: 200px;
+        padding-left: 500px;
+        position: absolute;
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class='container-fluid'>
+            <!-- Brand Logo and tagline -->
+            <div class="navbar-header">
+                <!-- Brand and toggle hamburger group for better mobile display -->
+                <!-- conditionally display hamburger -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapseMenu" aria-expanded="false">
+                    <!-- draw the burger -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- This will style text or an image link as the logo/home link -->
+                <a class="navbar-brand" href="index.html">Big Apple Tours</a>
+                <p class="navbar-text">NYC's Guide to the Unknown</p>
+            </div>
+            <!-- Another set of navigation on the right -->
+            <!-- collect the nav links forms and other content we want to hide show on mobile with the hamburger -->
+            <div class="collapse navbar-collapse" id="collapseMenu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="map.html">Map</a></li>
+                    <li><a href="freeroam.html">Free Roam</a></li>
+                    <li><a href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="map">
+        <iframe id="airpano_frame" width="950" height="650" src="http://www.airpano.ru/files/Manhattan-New-York-Virtual-Tour/2-3-2" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" framespacing="0"> </iframe>
+        <br>
+        <div style="float:right">Courtesy of <a href="http://www.airpano.com/" target="_blank">www.AirPano.com</a></div>
+    </div>
+    <div class="bg">
+        <img src="images/cover.NY.jpg">
+    </div>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NYC Find</title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <style type="text/css">
+    #myCarousel{
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+    #myCarousel img{
+      width: 100%;
+    }
+    .carousel-control{
+      color: cornflowerblue;
+    }
+    #myCarousel p{
+      font-size: 40px;
+      position: relative;
+      font-family: Lobster;
+      text-align: center;
+      z-index: 1000000;
+    }
+
+      .navbar-default{
+        background-color: red;
+      }
+      .navbar-default .navbar-nav>li>a,
+      .navbar-default .navbar-header a, 
+      .navbar-default .navbar-header p{
+        color: black;
+        font-family: Lobster;
+        font-size: 30px;
+      }
+
+    </style>
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+        <div class='container-fluid'>
+            <!-- Brand Logo and tagline -->
+            <div class="navbar-header">
+                <!-- Brand and toggle hamburger group for better mobile display -->
+                <!-- conditionally display hamburger -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapseMenu" aria-expanded="false">
+                    <!-- draw the burger -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- This will style text or an image link as the logo/home link -->
+                <a class="navbar-brand" href="index.html">Big Apple Tours</a>
+                <p class="navbar-text">NYC's Guide to the Unknown</p>
+            </div>
+            <!-- Another set of navigation on the right -->
+            <!-- collect the nav links forms and other content we want to hide show on mobile with the hamburger -->
+            <div class="collapse navbar-collapse" id="collapseMenu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="map.html">Map</a></li>
+                    <li><a href="freeroam.html">Free Roam</a></li>
+                    <li><a href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="hover">
+
+    <!-- Indicator Buttons -->
+    <ol class="carousel-indicators">
+      <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+    <!-- End Indicator Buttons -->
+    
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+    
+      <div class="item active">
+      <p>Welcome to the tour of a lifetime!</p>
+       <br>
+       <p>click below for a map of NYC!</p>
+       <a href="map.html"><img src="images/cover.NY.jpg"></a> 
+      </div>
+
+      <div class="item">
+      <p>Welcome the tour of a lifetime!</p>
+       <br>
+       <p>click below to tour NYC!</p>
+        <a href="freeroam.html"><img src="images/cover.Time.jpg"></a>
+      </div>
+      <div class="item">
+      <p>Welcome the tour of a lifetime!</p>
+       <br>
+       <p>click below see the about page!</p>
+        <a href="about.html"><img src="images/brooklyn.jpg "></a>
+      </div>
+    </div> 
+    <!-- End Slideshow Wrapper -->
+
+    <!-- Prev Next Buttons -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+
+  </div>
+  <!-- End Slideshowe -->
+
+
+
+<script
+  src="http://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
